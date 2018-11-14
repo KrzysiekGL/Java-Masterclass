@@ -1,19 +1,9 @@
 package pw.szczerbowski;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class MobilePhone {
     private ArrayList<Contact> contacts;
-
-    static private Scanner scanner=new Scanner(System.in);
-
-    private int getIndexOfContactByNameOnly(String name) {
-        for(int i=0; i<contacts.size(); ++i) {
-            if(contacts.get(i).getName() == name) return i;
-        }
-        return -1;
-    }
 
     public MobilePhone(){
         contacts=new ArrayList<Contact>();
@@ -24,19 +14,17 @@ public class MobilePhone {
         System.out.println("Contact added");
     }
 
-    public void modifyContact(String name) {
-        int index=getIndexOfContactByNameOnly(name);
-        if(index==-1) System.out.println("There is no contact with that set of name & phone number");
+    public void modifyContact(String changeName, String withName, String andPhoneNumber) {
+        int index=getIndexOfContactByName(changeName);
+        if(index==-1) System.out.println("There is no contact with that name");
         else {
-            System.out.println("Enter new name and phone for contact: ");
-            String newName=scanner.nextLine();
-            String newPhone=scanner.nextLine();
-            contacts.set(index, new Contact(newName, newPhone));
+            System.out.println("Contact " + changeName + " modified to " + withName + " " + andPhoneNumber);
+            contacts.set(index, new Contact(withName, andPhoneNumber));
         }
     }
 
-    public void removeContact(String name, String phoneNumber) {
-        int index=getIndexOfContactByNameOnly(name);
+    public void removeContact(String name) {
+        int index=getIndexOfContactByName(name);
         if(index==-1) System.out.println("There is no such contact");
         else {
             contacts.remove(index);
@@ -44,10 +32,17 @@ public class MobilePhone {
     }
 
     public void queryContact(String name) {
-        int index=getIndexOfContactByNameOnly(name);
+        int index=getIndexOfContactByName(name);
         if(index==-1) System.out.println("There is no such Contact");
         else {
             System.out.println("Contact: " + contacts.get(index).getName() + " " + contacts.get(index).getPhoneNumber());
         }
+    }
+
+    public int getIndexOfContactByName(String name) {
+        String temp;
+        for(int i=0; i<contacts.size(); ++i)
+            if(contacts.get(i).getName().equals(name)) return i;
+        return -1;
     }
 }
