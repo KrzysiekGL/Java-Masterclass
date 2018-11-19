@@ -24,4 +24,8 @@ public class Bank {
             System.out.println(branches.get(branchIndex).getNameOfCustomer(i));
         }
     }
+
+    public String getBankName() {
+        return  bankName;
+    }
 }

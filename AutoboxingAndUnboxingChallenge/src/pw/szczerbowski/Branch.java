@@ -26,4 +26,8 @@ public class Branch {
     public String getNameOfCustomer(int atIndex) {
         return customers.get(atIndex).getName();
     }
+
+    public String getBranchName() {
+        return branchName;
+    }
 }
