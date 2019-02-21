@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfdd4baf-31af-4ab2-aaf7-7b188f922d76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/krzysiekgl/ITelephone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pl/krzysiekgl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/krzysiekgl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/krzysiekgl/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pl/krzysiekgl/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="135">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -38,12 +37,15 @@
         <entry file="file://$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
               <folding>
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#318#319#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#1003#1004#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,6 +68,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pl/krzysiekgl/ITelephone.java" />
+        <option value="$PROJECT_DIR$/src/pl/krzysiekgl/Main.java" />
         <option value="$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java" />
       </list>
     </option>
@@ -113,7 +116,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550787345435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550789065621" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -138,6 +141,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,18 +157,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550786968849</updated>
-      <workItem from="1550786972924" duration="373000" />
+      <workItem from="1550786972924" duration="1980000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="373000" />
+    <option name="totallyTimeSpent" value="1980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1982" y="581" width="2040" height="1572" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18273093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18273093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -188,7 +196,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Run" order="9" weight="0.3294686" />
+      <window_info active="true" anchor="right" id="Run" order="9" visible="true" weight="0.32931727" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,8 +205,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/pl/krzysiekgl/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -212,12 +220,15 @@
     <entry file="file://$PROJECT_DIR$/src/pl/krzysiekgl/DeskPhone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
           <folding>
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#318#319#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
           </folding>
         </state>
       </provider>
