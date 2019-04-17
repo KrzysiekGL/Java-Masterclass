@@ -1,6 +1,7 @@
 package pl.krzysiekgl;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Player implements ISaveable {
   private String name;
@@ -26,7 +27,7 @@ public class Player implements ISaveable {
   }
   
   @Override
-  public ArrayList<String> saveValues() {
+  public List<String> saveValues() {
     ArrayList<String> values = new ArrayList<>();
     values.add(name);
     values.add(String.valueOf(hitPoints));
@@ -35,7 +36,7 @@ public class Player implements ISaveable {
   }
   
   @Override
-  public void loadValues(ArrayList<String> values) {
+  public void loadValues(List<String> values) {
     name = values.get(0);
     hitPoints = Integer.parseInt(values.get(1));
     weapon = values.get(2);

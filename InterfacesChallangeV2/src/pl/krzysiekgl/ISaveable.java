@@ -1,8 +1,8 @@
 package pl.krzysiekgl;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ISaveable {
-  ArrayList<String> saveValues();
-  void loadValues(ArrayList<String> values);
+  List<String> saveValues();
+  void loadValues(List<String> values);
 }

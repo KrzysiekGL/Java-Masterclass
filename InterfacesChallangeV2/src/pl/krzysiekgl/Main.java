@@ -2,6 +2,7 @@ package pl.krzysiekgl;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +16,7 @@ public class Main {
         n00b.loadValues(otherPlayerValues);
         System.out.println(n00b);
         
-        ArrayList<String> saveOfKrzysiek = krzysiek.saveValues();
+        List<String> saveOfKrzysiek = krzysiek.saveValues();
         Player christopher = new Player();
         christopher.loadValues(saveOfKrzysiek);
         System.out.println(christopher.toString());
