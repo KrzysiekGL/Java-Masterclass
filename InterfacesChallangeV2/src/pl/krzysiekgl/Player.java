@@ -37,6 +37,8 @@ public class Player implements ISaveable {
   
   @Override
   public void loadValues(List<String> values) {
+    if(!(values != null && values.size() >= 3)) return;
+    
     name = values.get(0);
     hitPoints = Integer.parseInt(values.get(1));
     weapon = values.get(2);
