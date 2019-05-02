@@ -8,7 +8,7 @@ public class MyWindow extends Frame {
     public MyWindow(String title) {
         super(title);
         
-        setSize(1920, 1080);
+        setSize(500, 200);
         
         addWindowListener(new WindowAdapter() {
             @Override
