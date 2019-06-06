@@ -33,7 +33,7 @@ public class Controller {
     @FXML
     public void handleKeyReleased() {
         String text = textField.getText();
-        boolean disableButtons = text.isEmpty() || text.trim().isEmpty();
+        boolean disableButtons = text.isEmpty() || text.trim().isEmpty();   //trim() is trimming blank characters
         helloButton.setDisable(disableButtons);
         secondButton.setDisable(disableButtons);
     }
