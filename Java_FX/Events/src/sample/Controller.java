@@ -15,10 +15,13 @@ public class Controller {
     private Button secondButton;
     
     @FXML
-    public void onButtonClicked(ActionEvent event) {            //event - to determine which control was triggered
-        System.out.println("Hello " + textField.getText());
-        System.out.println("The following button was pressed: " + event.getSource());
-        textField.setText("");
+    public void onButtonClicked(ActionEvent event) {            //event - to determine which control was triggered (works as a ID of a element)
+        if (event.getSource().equals(helloButton)) {
+            System.out.println("Hello " + textField.getText());
+        }
+        else if (event.getSource().equals(secondButton)) {
+            System.out.println("Second button was pressed.");
+        }
     }
     
 }
