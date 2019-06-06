@@ -4,13 +4,19 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.text.Font?>
-
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import javafx.scene.control.ChoiceBox?>
 <GridPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
 
     <Button GridPane.columnIndex="0" GridPane.rowIndex="0" text="Click Me!">
@@ -41,6 +47,7 @@
     <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="3" text="Blue"     toggleGroup="$colorToggleGroup" selected="true"/>
     <RadioButton GridPane.rowIndex="0" GridPane.columnIndex="4" text="Green"    toggleGroup="$colorToggleGroup"/>
 
+<!--    It is possible to group individual elements in a VBox or HBox. And because of this I don't have to prescribe row and index position for every element.-->
     <VBox GridPane.rowIndex="2" GridPane.columnIndex="0" >
         <CheckBox text="Cat"/>
         <CheckBox text="Bird"/>
@@ -52,5 +59,38 @@
         <ToggleButton text="Toggle Me"/>
         <ToggleButton text="Toggle Me"/>
     </HBox>
+
+    <VBox GridPane.rowIndex="4" GridPane.columnIndex="0" >
+        <TextField  text="Hello"/>
+        <PasswordField />
+    </VBox>
+
+    <ComboBox GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="5">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Option 1 this is of course"/>
+                <String fx:value="Option 2"/>
+                <String fx:value="Option 3"/>
+                <String fx:value="Option 4"/>
+                <String fx:value="Option 5"/>
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Default option"/>
+        </value>
+    </ComboBox>
+
+    <ChoiceBox GridPane.rowIndex="6" GridPane.columnIndex="0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="cb 1"/>
+                <String fx:value="cb 2"/>
+                <String fx:value="cb 3"/>
+                <String fx:value="cb 4"/>
+                <String fx:value="cb 5"/>
+                <String fx:value="cb 6"/>
+            </FXCollections>
+        </items>
+    </ChoiceBox>
 
 </GridPane>
