@@ -3,6 +3,7 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 
 public class Controller {
@@ -13,6 +14,8 @@ public class Controller {
     private Button helloButton;
     @FXML
     private Button secondButton;
+    @FXML
+    private CheckBox clearText;
     
     @FXML
     public void initialize() {
@@ -28,6 +31,19 @@ public class Controller {
         else if (event.getSource().equals(secondButton)) {
             System.out.println("Second button was pressed.");
         }
+        
+//        //Example of not taking care of user event thread and bad user experience
+//        try {
+//            Thread.sleep(10000);
+//        }
+//        catch (InterruptedException exception) {
+//            //we dont't care about this for now...
+//        }
+        
+        if (clearText.isSelected()) {
+            textField.clear();
+            handleKeyReleased();
+        }
     }
     
     @FXML
@@ -36,6 +52,10 @@ public class Controller {
         boolean disableButtons = text.isEmpty() || text.trim().isEmpty();   //trim() is trimming blank characters
         helloButton.setDisable(disableButtons);
         secondButton.setDisable(disableButtons);
+    }
+    
+    public void handleChange() {
+        System.out.println("The checkbox is " + (clearText.isSelected() ? "selected" : "not selected"));
     }
     
 }
